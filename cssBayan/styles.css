@@ -1,0 +1,27 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #1a296b;
+}
+
+.wrapper {
+  max-width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.li {
+  border: 1px solid black;
+  text-align: center;
+}
+
+input:checked ~ label {
+  display: none;
+  transition: 1.5s;
+}
+
+.accordion_section:hover {
+  display: inline;
+  transition: 1.5s ease-in-out;
+}

@@ -1,24 +1,27 @@
 body {
   font-family: "Courier New", Courier, monospace;
-  background-color: #5c75e4;
+  background-color: #1a296b;
 }
+
 .wrapper {
   max-width: 30%;
   margin: 0 auto;
-}
-.accordion_main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
-.accordion_section {
+
+.li {
   border: 1px solid black;
   text-align: center;
 }
-input {
-  visibility: hidden;
+
+input:checked ~ label {
+  display: none;
+  transition: 1.5s;
 }
-.accordion_section:active,
+
 .accordion_section:hover {
-  transition: 0.5s ease-in-out;
+  display: inline;
+  transition: 1.5s ease-in-out;
 }
